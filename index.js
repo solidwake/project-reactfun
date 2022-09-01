@@ -50,3 +50,11 @@ ReactDOM.render(
     <ul><h2>A list!</h2><li>An item!</li><li>Another item!</li></ul>,
     document.getElementById('list')
 )
+
+// Below is an example of what the render() method does, but using only vanilla JavaScript
+// It showcases the distinction between imperative (vanilla JS) and declarative (React/JSX) programming
+
+const h1 = document.createElement('h1')
+h1.textContent = 'This is an imperative way to program'
+h1.className = 'header'
+document.getElementById('root').append(h1)
