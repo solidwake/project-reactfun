@@ -36,12 +36,29 @@ function Text() {
     )
 }
 
+// JSX accepts only one parent element, so place multiple elements inside a <div> and they become children elements of the <div>
+
+/*
 ReactDOM.render(
     <div>
         <Navbar />
         <Heading />
         <Text />
     </div>,
+    document.getElementById('heading', 'text')
+)
+*/
+
+// JSX
+const page = (
+    <div>
+        <Navbar />
+        <Heading />
+        <Text />
+    </div>
+)
+ReactDOM.render(
+    page,
     document.getElementById('heading', 'text')
 )
 
@@ -58,3 +75,34 @@ const h1 = document.createElement('h1')
 h1.textContent = 'This is an imperative way to program'
 h1.className = 'header'
 document.getElementById('root').append(h1)
+
+const h3 = document.createElement('h3')
+h3.textContent = 'Hello Idris'
+h3.className = 'title'
+console.log(h3);
+
+// <h3 class="title">Hello Idris</h3>
+
+const element = <h3 className='title'>This is JSX</h3>
+console.log(element);
+
+// JSX returns a JavaScript object that describes the element for React to render
+
+/* 
+{$$typeof: Symbol(react.element), type: 'h3', key: null, ref: null, props: {…}, …}
+$$typeof: Symbol(react.element)
+key: null
+props:
+children: "This is JSX"
+className: "title"
+[[Prototype]]: Object
+ref: null
+type: "h3"
+_owner: null
+_store:
+validated: false
+[[Prototype]]: Object
+_self: null
+_source: null
+[[Prototype]]: Object
+*/
