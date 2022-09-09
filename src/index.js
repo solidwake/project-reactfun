@@ -1,13 +1,13 @@
 import React from 'react'; // 1st step
 import ReactDOM from 'react-dom/client'; // 2nd step
 import './index.css'; // 3rd step
-import App from './App'; // 4th step
+import Page from './Static'; // 4th step
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Page />
   </React.StrictMode>
 );
 

@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-function App() {
+function App() { // React components must use PascaleCase instead of camelCase
   return (
     <div className="App">
       <nav>
@@ -20,7 +20,7 @@ function App() {
         So all of this content should be placed inside a single div.
       </p>
       <h2>Let's place a local image and an image url here.</h2>
-      <img src="./logo192.png" alt="React logo"></img>
+      <img src="./logo192.png" alt="React logo" />
       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png"
         alt="trollface"></img>
       {/* <header className="App-header">
