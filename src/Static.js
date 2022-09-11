@@ -3,9 +3,9 @@ import React from 'react';
 function Header() {
     return (
         <header>
-            <nav>
+            <nav className='nav'>
                 <h1>Idris's React App</h1>
-                <ul>
+                <ul className='nav-items'>
                     <li>fuctions</li>
                     <li>data</li>
                     <li>objects</li>
@@ -33,7 +33,7 @@ function Footer() {
     return (
         <div>
             <footer>
-                <small>2022 Idris Westbrook. All Rights Reserved.</small>
+                <small> &copy; 2022 Idris Westbrook. All Rights Reserved.</small>
             </footer>
         </div>
     )
